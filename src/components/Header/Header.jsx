@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <span className={styles.logo}>MonPortfolio</span>
+        <span className={styles.logo}>Bernardi Noah</span>
 
         
         <div className={styles.links}>

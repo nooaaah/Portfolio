@@ -48,6 +48,7 @@
       color: $color-text;
       text-decoration: none;
       word-break: break-all;
+      text-wrap: balance;
 
       &:hover {
         color: $color-secondary;

@@ -37,6 +37,7 @@ export default function Projects() {
         <button
           className={`${styles.arrow} ${styles.left}`}
           onClick={() => scroll("left")}
+          aria-label="Projet précédent"
         >
           ‹
         </button>
@@ -68,6 +69,7 @@ export default function Projects() {
         <button
           className={`${styles.arrow} ${styles.right}`}
           onClick={() => scroll("right")}
+          aria-label="Projet suivant"
         >
           ›
         </button>
