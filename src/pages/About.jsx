@@ -6,11 +6,12 @@ export default function About() {
     <section className={`section ${styles.about}`}>
       <h2>À propos</h2>
       <p>
-        Curieux et rigoureux, j’aime comprendre comment les choses fonctionnent et chercher des solutions propres et efficaces.
+        Je suis développeur web junior, formé au développement d’applications web modernes et orientées utilisateur.
+        Issu d’une reconversion professionnelle, j’ai choisi le développement web pour son équilibre entre logique, créativité et résolution de problèmes.
 
-        Le développement web me permet d’allier logique, créativité et sens du détail.
+        Aujourd’hui, je conçois des interfaces claires, responsives et maintenables, avec une affinité particulière pour le front-end et l’expérience utilisateur, tout en gardant une vision globale du projet web.
 
-        Même si je suis capable d’intervenir sur l’ensemble d’un projet web, je prends particulièrement plaisir à travailler sur le front-end, où l’expérience utilisateur et la qualité visuelle jouent un rôle central.
+        Je souhaite rejoindre une équipe en tant que développeur web junior, idéalement sur des projets orientés front-end, où je pourrais continuer à monter en compétences, consolider mes bases full-stack et participer activement à la création de solutions web utiles et bien conçues.
       </p>
     </section>
   );

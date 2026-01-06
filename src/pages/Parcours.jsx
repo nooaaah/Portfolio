@@ -6,25 +6,17 @@ export default function Parcours() {
       <h2>Parcours</h2>
 
       <p>
-        Mon parcours n’est pas linéaire, et c’est précisément ce qui fait sa richesse.
+        Développeur Web — OpenClassrooms 2025</p>
+
+        
+
+        <p>Formation diplômante orientée pratique, axée sur la réalisation de projets concrets proches de situations professionnelles.
+        J’y ai acquis des bases solides en développement web, de l’intégration de maquettes responsives à la création d’applications dynamiques avec JavaScript et React.
+
+        Cette formation m’a permis de développer une méthode de travail rigoureuse, de structurer mes projets efficacement et de comprendre les enjeux réels d’un produit web : lisibilité du code, maintenabilité et expérience utilisateur.
       </p>
 
-      <p>
-        Issu d’un parcours initial orienté vers la comptabilité, j’ai progressivement
-        ressenti le besoin de créer des projets concrets, utiles et visibles. Cette recherche
-        de sens m’a conduit à découvrir le développement web.
-      </p>
-
-      <p>
-        Lors de ma reconversion, j’ai suivi une formation axée sur les fondamentaux du front-end,
-        notamment HTML, CSS, JavaScript et React. J’ai rapidement compris que mon attrait pour
-        la logique et le design trouvait ici un terrain d’expression idéal.
-      </p>
-
-      <p>
-        Aujourd’hui, je conçois des interfaces modernes et accessibles, avec une attention
-        particulière portée à l’expérience utilisateur et à la qualité du code.
-      </p>
+      
     </section>
   );
 }

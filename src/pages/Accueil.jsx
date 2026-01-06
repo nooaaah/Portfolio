@@ -5,11 +5,12 @@ export default function Accueil() {
     
     <section className={styles.hero}>
       <div className={styles.heroContent}>
-        <h1>Bienvenue</h1>
+        <h1>Développeur web junior</h1>
         <p>
-          Je suis développeur web, passionné par la création d’interfaces claires, modernes et performantes.
-          À travers ce site, je vous invite à découvrir mon parcours, mes compétences et les projets que j’ai réalisés. 
-          N’hésitez pas à parcourir les différentes sections pour en savoir plus sur mon travail et ma façon d’aborder le développement web.
+          Développeur web junior, je conçois des interfaces modernes, claires et responsives, avec une attention particulière portée à l’expérience utilisateur et à la qualité du code.
+
+          À travers ce portfolio, je vous invite à découvrir mon parcours, mes projets et les compétences que j’ai développées lors de ma formation et de mes réalisations récentes.
+          Chaque projet présenté reflète ma progression, ma méthode de travail et mon envie de créer des solutions web fiables et bien pensées.
         </p>
       </div>
     </section>
