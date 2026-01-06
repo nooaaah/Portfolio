@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins";
+
+.footer {
+  width: 100%;
+  background-color: $color-bg-soft;
+  color: $color-muted;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-family: $font-text;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 500;
+    @include mixins.transition(color);
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

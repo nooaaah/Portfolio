@@ -1,0 +1,33 @@
+@use "../styles/variables" as *;
+
+.parcours {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.parcours h2 {
+  font-family: $font-title;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
+  color: $color-primary;
+}
+
+.parcours p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: $color-text;
+  margin-bottom: 1.6rem;
+}
+
+
+@media (max-width: $bp-mobile) {
+  .parcours h2 {
+    font-size: 2.2rem;
+  }
+
+  .parcours p {
+    font-size: 1.1rem;
+  }
+}

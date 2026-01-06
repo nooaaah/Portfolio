@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "level": "Expert"
+  },
+  {
+    "id": 2,
+    "name": "CSS / SCSS",
+    "level": "Avancé"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "level": "Avancé"
+  },
+  {
+    "id": 4,
+    "name": "React",
+    "level": "Avancé"
+  },
+  {
+    "id": 5,
+    "name": "Git / GitHub",
+    "level": "Intermédiaire"
+  },
+  {
+    "id": 6,
+    "name": "Responsive Design",
+    "level": "Avancé"
+  }
+]

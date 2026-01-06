@@ -1,0 +1,176 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins";
+
+
+.projects {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  h2 {
+    font-family: $font-title;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-primary;
+  }
+}
+
+
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+
+.projectCard {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+}
+
+
+.cardInner {
+  background: $color-bg-soft;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.projectCard:hover .cardInner {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+.projectCard:hover img {
+  transform: scale(1.05);
+}
+
+
+.imageWrapper {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  background: $color-bg-soft;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  h3 {
+    font-family: $font-title;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: $color-text;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: $color-muted;
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+  }
+}
+
+
+.viewButton {
+  align-self: flex-start;
+  background: $color-primary;
+  color: white;
+  border: none;
+  border-radius: $radius;
+  padding: 0.55rem 1.2rem;
+  font-family: $font-title;
+  font-weight: 600;
+  cursor: pointer;
+
+  @include mixins.transition(background-color, transform);
+
+  &:hover {
+    background: $color-secondary;
+    transform: translateX(4px);
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+}
+
+.left {
+  left: -20px;
+}
+
+.right {
+  right: -20px;
+}
+
+
+@media (max-width: $bp-tablet) {
+  .projectCard {
+    flex: 0 0 260px;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .projectCard {
+    flex: 0 0 220px;
+  }
+
+  .imageWrapper {
+    height: 150px;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: $color-light;
+  text-align: center;
+  padding: 2rem;
+
+  .content {
+    max-width: 700px;
+
+    h1 {
+      font-family: $font-title;
+      font-size: 2.5rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: $font-text;
+      font-size: 1.2rem;
+      color: $color-dark;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include mixins.responsive(tablet) {
+    .content {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

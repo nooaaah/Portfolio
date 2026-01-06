@@ -1,0 +1,140 @@
+@use "./variables" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: $color-bg; 
+  color: $color-text;
+  font-family: $font-text;
+}
+
+
+body {
+  overflow-x: hidden; 
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1, h2 {
+  color: $color-primary;
+}
+
+h3 {
+  color: $color-text;
+}
+
+p {
+  margin: 0;
+  color: $color-muted;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+
+section {
+  width: 100%;
+  padding: 4rem 1.5rem;
+}
+
+
+.fullpage-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+@media (max-width: $bp-tablet) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4.5vw, 2.6rem);
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+

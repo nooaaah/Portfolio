@@ -1,0 +1,86 @@
+@use "../styles/variables" as *;
+
+.contact {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: $color-text;
+
+  h2 {
+    font-family: $font-title;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: $color-primary;
+  }
+
+  p {
+    font-family: $font-text;
+    font-size: 1.2rem;
+    color: $color-muted;
+    margin-bottom: 3rem;
+  }
+
+  .contactCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    background: $color-bg-soft;
+    padding: 2rem 1.5rem;
+    border-radius: $radius;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      margin: 0.5rem 0;
+      font-family: $font-title;
+      font-size: 1.2rem;
+      color: $color-primary;
+    }
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      word-break: break-all;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+
+@media (max-width: $bp-tablet) {
+  .contactContent {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .contactContent {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+

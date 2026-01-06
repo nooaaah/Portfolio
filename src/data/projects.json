@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "slug": "booki",
+    "title": "Booki",
+    "context": "Dans le cadre de la formation Développeur Web OpenClassrooms, ce projet consistait à intégrer l’interface d’un site de réservation d’hébergements et d’activités à partir de maquettes fournies par un designer UI.",
+    "objectives": "L’objectif principal était de produire une intégration fidèle, responsive et accessible, en respectant les standards du web et les contraintes imposées par la maquette.",
+    "stack": ["HTML", "CSS"],
+    "skills": "Ce projet m’a permis de consolider mes bases en intégration HTML/CSS, en structuration sémantique et en gestion du responsive.",
+    "results": "Un site statique fonctionnel, responsive sur desktop, tablette et mobile, respectant parfaitement la maquette et les attentes du client.",
+    "improvements": "Amélioration possible avec l’ajout d’interactions JavaScript, d’un moteur de recherche dynamique et d’un système de réservation réel.",
+    "image": "/images/Booki1200.webp",
+    "repo": "https://github.com/nooaaah/booki"
+  },
+
+  {
+    "id": 2,
+    "slug": "sophie-bluel",
+    "title": "Sophie Bluel",
+    "context": "Dans ce projet, j’ai travaillé sur un site vitrine existant nécessitant l’ajout de fonctionnalités dynamiques via JavaScript et une API REST.",
+    "objectives": "Développer une page web dynamique permettant l’affichage, l’ajout et la suppression de projets via une interface administrateur sécurisée.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "skills": "J’ai renforcé mes compétences en JavaScript, en manipulation du DOM, en appels API et en gestion des états d’interface.",
+    "results": "Une application interactive permettant à un administrateur de gérer dynamiquement le contenu affiché sans rechargement de page.",
+    "improvements": "Refonte UI plus poussée, gestion avancée des erreurs utilisateur et amélioration de l’expérience globale.",
+    "image": "/images/Sophie_Bluel1200.webp"
+  },
+
+  {
+    "id": 3,
+    "slug": "kasa",
+    "title": "Kasa",
+    "context": "Kasa est une application de location immobilière développée à partir d’une maquette et de données fournies, dans un environnement React.",
+    "objectives": "Le but était de concevoir une application front-end moderne avec une navigation fluide et une architecture basée sur des composants.",
+    "stack": ["React", "JavaScript", "SCSS"],
+    "skills": "Ce projet m’a permis de maîtriser les bases de React, la gestion des composants, des props, des state, du routing avec React Router, la gestion des erreurs et des animations CSS.",
+    "results": "L’application est fonctionnelle, performante et respecte les standards attendus pour une application React moderne.",
+    "improvements": "Une évolution possible serait l’ajout d’un back-end.",
+    "image": "/images/Kasa1200.webp"
+    
+  },
+
+  {
+    "id": 4,
+    "slug": "mon-vieux-grimoire",
+    "title": "Mon Vieux Grimoire",
+    "context": "Projet back-end réalisé dans le cadre de ma formation, visant à développer une API sécurisée pour une application de gestion de livres.",
+    "objectives": "L’objectif était de concevoir une API REST permettant l’authentification, la gestion des données et le stockage sécurisé des fichiers.",
+    "stack": ["Node.js", "Express", "MongoDB"],
+    "skills": "J’ai appris à structurer un serveur back-end, sécuriser des routes, gérer une base de données et implémenter des règles de sécurité.",
+    "results": "L’API est fonctionnelle, sécurisée et conforme aux exigences techniques imposées.",
+    "improvements": "Des optimisations pourraient être apportées sur la validation des données et la gestion avancée des permissions.",
+    "image": "/images/Mon_vieux_grimoire1200.webp"
+  },
+
+  {
+    "id": 5,
+    "slug": "portfolio-react",
+    "title": "Portfolio personnel",
+    "context": "Projet personnel servant de vitrine professionnelle pour présenter mes compétences ainsi que mes projets réalisés.",
+    "objectives": "Concevoir un portfolio moderne, responsive et performant, reflétant mon identité et mes compétences techniques.",
+    "stack": ["React", "Vite", "SCSS"],
+    "skills": "Ce projet m’a permis d’approfondir mes compétences en architecture front-end, design UI, SEO et accessibilité.",
+    "results": "Le portfolio est responsive, optimisé pour le référencement et offre une navigation fluide sur tous les supports.",
+    "improvements": "Il pourra évoluer avec l’ajout de nouveaux projets, d’un back-end et d’un espace d’administration.",
+    "image": "/images/Portfolio.webp"
+  }
+]

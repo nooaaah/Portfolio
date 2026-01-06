@@ -1,0 +1,52 @@
+@use "../styles/variables" as *;
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-family: $font-title;
+  font-size: 3.2rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: $color-muted;
+}
+
+
+@media (max-width: $bp-tablet) {
+  .accueil {
+    min-height: auto;
+    padding: 6rem 2rem 4rem;
+  }
+
+  .accueil p {
+    max-width: 520px;
+  }
+}
+
+
+
+@media (max-width: $bp-mobile) {
+  .hero {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+}
+
