@@ -23,7 +23,8 @@
     "skills": "J’ai renforcé mes compétences en JavaScript, en manipulation du DOM, en appels API et en gestion des états d’interface.",
     "results": "Une application interactive permettant à un administrateur de gérer dynamiquement le contenu affiché sans rechargement de page.",
     "improvements": "Refonte UI plus poussée, gestion avancée des erreurs utilisateur et amélioration de l’expérience globale.",
-    "image": "/images/Sophie_Bluel1200.webp"
+    "image": "/images/Sophie_Bluel1200.webp",
+    "repo": "https://github.com/nooaaah/Portfolio-architecte-sophie-bluel"
   },
 
   {
@@ -36,7 +37,8 @@
     "skills": "Ce projet m’a permis de maîtriser les bases de React, la gestion des composants, des props, des state, du routing avec React Router, la gestion des erreurs et des animations CSS.",
     "results": "L’application est fonctionnelle, performante et respecte les standards attendus pour une application React moderne.",
     "improvements": "Une évolution possible serait l’ajout d’un back-end.",
-    "image": "/images/Kasa1200.webp"
+    "image": "/images/Kasa1200.webp",
+    "repo": "https://github.com/nooaaah/kasa"
     
   },
 
@@ -50,7 +52,8 @@
     "skills": "J’ai appris à structurer un serveur back-end, sécuriser des routes, gérer une base de données et implémenter des règles de sécurité.",
     "results": "L’API est fonctionnelle, sécurisée et conforme aux exigences techniques imposées.",
     "improvements": "Des optimisations pourraient être apportées sur la validation des données et la gestion avancée des permissions.",
-    "image": "/images/Mon_vieux_grimoire1200.webp"
+    "image": "/images/Mon_vieux_grimoire1200.webp",
+    "repo": "https://github.com/nooaaah/Mon-Vieux-Grimoire-backend"
   },
 
   {
@@ -63,6 +66,7 @@
     "skills": "Ce projet m’a permis d’approfondir mes compétences en architecture front-end, design UI, SEO et accessibilité.",
     "results": "Le portfolio est responsive, optimisé pour le référencement et offre une navigation fluide sur tous les supports.",
     "improvements": "Il pourra évoluer avec l’ajout de nouveaux projets, d’un back-end et d’un espace d’administration.",
-    "image": "/images/Portfolio.webp"
+    "image": "/images/Portfolio.webp",
+    "repo": "https://github.com/nooaaah/Portfolio"
   }
 ]
