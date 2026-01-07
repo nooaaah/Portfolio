@@ -1,6 +1,6 @@
-import styles from "../styles/Accueil.module.scss";
+import styles from "../styles/Hero.module.scss";
 
-export default function Accueil() {
+export default function Hero() {
   return (
     
     <section className={styles.hero}>

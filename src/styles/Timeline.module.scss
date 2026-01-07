@@ -1,20 +1,20 @@
 @use "../styles/variables" as *;
 
-.parcours {
+.timeline {
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   text-align: center;
 }
 
-.parcours h2 {
+.timeline h2 {
   font-family: $font-title;
   font-size: 2.6rem;
   margin-bottom: 2.5rem;
   color: $color-primary;
 }
 
-.parcours p {
+.timeline p {
   font-size: 1.25rem;
   line-height: 1.8;
   color: $color-muted;
@@ -23,11 +23,11 @@
 
 
 @media (max-width: $bp-mobile) {
-  .parcours h2 {
+  .timeline h2 {
     font-size: 2.2rem;
   }
 
-  .parcours p {
+  .timeline p {
     font-size: 1.1rem;
   }
 }

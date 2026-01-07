@@ -1,8 +1,8 @@
-import styles from "../styles/Parcours.module.scss";
+import styles from "../styles/Timeline.module.scss";
 
-export default function Parcours() {
+export default function Timeline() {
   return (
-    <section className={styles.parcours}>
+    <section className={styles.timeline}>
       <h2>Parcours</h2>
 
       <p>

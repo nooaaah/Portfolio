@@ -1,7 +1,7 @@
-import Accueil from "./Accueil";
+import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
-import Parcours from "./Parcours";
+import Timeline from "./Timeline";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import AnimatedSection from "../components/AnimatedSection";
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       
       <AnimatedSection id="accueil" >
-        <Accueil />
+        <Hero />
       </AnimatedSection>
 
       
@@ -20,7 +20,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection id="parcours" >
-        <Parcours />
+        <Timeline />
       </AnimatedSection>
 
       

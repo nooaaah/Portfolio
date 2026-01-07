@@ -25,13 +25,17 @@
 
 
 @media (max-width: $bp-tablet) {
-  .accueil {
+  .hero {
     min-height: auto;
     padding: 6rem 2rem 4rem;
   }
 
-  .accueil p {
+  .heroContent {
     max-width: 520px;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
   }
 }
 
