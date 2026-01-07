@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "./Header.module.scss";
+import styles from "../../styles/Header.module.scss";
 
 export default function Header() {
   const location = useLocation();
