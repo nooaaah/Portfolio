@@ -20,6 +20,19 @@
   color: $color-muted;
   margin-bottom: 1.6rem;
 }
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.textBlock p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: $color-muted;
+}
 
 
 @media (max-width: $bp-mobile) {

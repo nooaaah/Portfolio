@@ -23,9 +23,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
+
         <span className={styles.logo}>Bernardi Noah</span>
 
-        
         <div className={styles.links}>
           <button onClick={() => goToSection("accueil")}>Accueil</button>
           <button onClick={() => goToSection("about")}>À propos</button>
@@ -35,27 +35,28 @@ export default function Header() {
           <button onClick={() => goToSection("contact")}>Contact</button>
         </div>
 
-        
         <button
           className={styles.burger}
-          aria-label="Menu"
+          aria-label="Ouvrir le menu"
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
         </button>
       </nav>
 
-      
-      {menuOpen && (
-        <div className={styles.mobileMenu}>
-          <button onClick={() => goToSection("accueil")}>Accueil</button>
-          <button onClick={() => goToSection("about")}>À propos</button>
-          <button onClick={() => goToSection("parcours")}>Parcours</button>
-          <button onClick={() => goToSection("projects")}>Projets</button>
-          <button onClick={() => goToSection("skills")}>Compétences</button>
-          <button onClick={() => goToSection("contact")}>Contact</button>
-        </div>
-      )}
+      <div
+        className={`${styles.mobileMenu} ${
+          menuOpen ? styles.open : ""
+        }`}
+      >
+        <button onClick={() => goToSection("accueil")}>Accueil</button>
+        <button onClick={() => goToSection("about")}>À propos</button>
+        <button onClick={() => goToSection("parcours")}>Parcours</button>
+        <button onClick={() => goToSection("projects")}>Projets</button>
+        <button onClick={() => goToSection("skills")}>Compétences</button>
+        <button onClick={() => goToSection("contact")}>Contact</button>
+      </div>
     </header>
   );
 }

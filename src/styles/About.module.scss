@@ -14,13 +14,18 @@
   color: $color-primary;
 }
 
-.about p {
-  max-width: 760px;
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.textBlock p {
+  max-width: 720px;
   margin: 0 auto;
-  font-family: $font-text;
-  font-size: 1.35rem; 
+  font-size: 1.1rem;
   line-height: 1.75;
-  color: $color-muted; 
+  color: $color-muted;
 }
 
 
