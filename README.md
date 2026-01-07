@@ -7,6 +7,8 @@ L’objectif est de présenter mes projets, mes compétences et mon parcours de 
 
 Ce portfolio a été conçu comme une application moderne, responsive et orientée expérience utilisateur.
 
+Le lien pour pouvoir le consulter: https://bernardi-noah.com/
+
 ## Technologies utilisées
 - React
 - JavaScript

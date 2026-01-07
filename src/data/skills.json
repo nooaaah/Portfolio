@@ -1,14 +1,12 @@
 [
   { "id": 1, "name": "HTML", "level": "Expert" },
   { "id": 2, "name": "CSS / SCSS", "level": "Avancé" },
-  { "id": 3, "name": "Responsive Design", "level": "Avancé" },
 
-  { "id": 4, "name": "JavaScript", "level": "Avancé" },
-  { "id": 5, "name": "React", "level": "Avancé" },
+  { "id": 3, "name": "JavaScript", "level": "Avancé" },
+  { "id": 4, "name": "React", "level": "Avancé" },
 
-  { "id": 6, "name": "Node.js / Express", "level": "Intermédiaire" },
+  { "id": 5, "name": "Node.js / Express", "level": "Intermédiaire" },
 
-  { "id": 7, "name": "Git / GitHub", "level": "Intermédiaire" },
+  { "id": 6, "name": "Git / GitHub", "level": "Intermédiaire" }
 
-  { "id": 8, "name": "Accessibilité web (bases)", "level": "Intermédiaire" }
 ]
