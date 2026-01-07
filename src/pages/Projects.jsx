@@ -47,7 +47,7 @@ export default function Projects() {
             <div key={project.id} className={styles.projectCard}>
               <div className={styles.cardInner}>
                 <div className={styles.imageWrapper}>
-                  <img src={project.image} alt={project.title} />
+                  <img src={project.image} alt={`Aperçu du projet ${project.title}`} />
                 </div>
 
                 <div className={styles.cardContent}>
