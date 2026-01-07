@@ -1,20 +1,16 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet a été réalisé dans le cadre de la formation Développeur Web d’OpenClassrooms.
 
-Currently, two official plugins are available:
+Ce repository contient le code de mon portfolio professionnel.  
+L’objectif est de présenter mes projets, mes compétences et mon parcours de manière claire et accessible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce portfolio a été conçu comme une application moderne, responsive et orientée expérience utilisateur.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies utilisées
+- React
+- JavaScript
+- SCSS
+- Responsive Design
 
 
-sudo docker-compose -f docker-compose.dev.yml build --no-cache pour nouvelle dependence/mise a jour
-sudo docker-compose -f docker-compose.dev.yml up -d pour le relancer
