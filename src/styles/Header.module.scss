@@ -1,0 +1,97 @@
+@use '../styles/variables' as *;
+
+.header {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid $color-border-soft;
+}
+
+.nav {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 58px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.logo {
+  font-family: $font-display;
+  font-size: 15px; font-weight: 700;
+  color: $color-text;
+  letter-spacing: -0.02em;
+  margin-right: auto;
+
+  span { color: $color-accent; }
+}
+
+.pill {
+  display: flex; gap: 2px;
+  background: $gray-100;
+  border-radius: $radius-md;
+  padding: 3px;
+}
+
+.pill button {
+  font-family: $font-body;
+  font-size: 12px; font-weight: 500;
+  color: $gray-500;
+  padding: 5px 14px;
+  border-radius: 8px;
+  background: none; border: none;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+
+  &:hover { color: $color-text; background: rgba(255,255,255,0.6); }
+  &.active { background: $white; color: $color-text; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+}
+
+.ctaBtn {
+  margin-left: 8px;
+  background: $color-text; color: $white;
+  font-family: $font-body; font-size: 12px; font-weight: 600;
+  padding: 7px 16px; border-radius: $radius-md;
+  border: none; cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 0.82; }
+}
+
+.burger { display: none; }
+.mobileMenu { display: none; }
+
+@media (max-width: $bp-mobile) {
+  .pill, .ctaBtn { display: none; }
+
+  .burger {
+    display: flex; align-items: center; justify-content: center;
+    margin-left: auto;
+    width: 36px; height: 36px;
+    background: $gray-100; border: none;
+    border-radius: $radius-md; cursor: pointer;
+    font-size: 18px; color: $color-text;
+  }
+
+  .mobileMenu {
+    display: flex; flex-direction: column;
+    background: $white;
+    border-bottom: 1px solid $color-border-soft;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0; pointer-events: none;
+    transition: max-height 0.25s ease, opacity 0.2s;
+
+    button {
+      font-family: $font-body; font-size: 14px; font-weight: 500;
+      color: $gray-700; padding: 14px 2rem;
+      text-align: left; border: none; background: none; cursor: pointer;
+      border-bottom: 1px solid $color-border-soft;
+      &:last-child { border: none; }
+      &:hover { background: $gray-50; }
+    }
+  }
+
+  .open { max-height: 400px; opacity: 1; pointer-events: auto; }
+}

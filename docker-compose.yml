@@ -1,0 +1,18 @@
+services:
+  react-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bernadi-noah-prod
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Persist certificats/état Caddy
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

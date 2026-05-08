@@ -1,0 +1,17 @@
+@use '../styles/variables' as *;
+
+.footer {
+  background: $gray-900;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 20px 2rem;
+}
+
+.inner {
+  max-width: $max-width; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 12px; color: $gray-500;
+}
+
+@media (max-width: $bp-mobile) {
+  .inner { flex-direction: column; gap: 4px; text-align: center; }
+}

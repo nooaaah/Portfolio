@@ -1,0 +1,89 @@
+@use '../styles/variables' as *;
+
+.about {
+  background: $gray-50;
+  border-top: 1px solid $gray-100;
+  border-bottom: 1px solid $gray-100;
+  padding: 88px 2rem;
+}
+
+.inner {
+  max-width: $max-width; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+
+.left {}
+
+.tagline {
+  font-family: $font-display;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 800; line-height: 1.15;
+  color: $color-text;
+  margin-bottom: 24px;
+
+  em {
+    font-style: italic; color: $color-accent;
+    font-family: $font-display;
+  }
+}
+
+.body {
+  display: flex; flex-direction: column; gap: 14px;
+  margin-bottom: 32px;
+
+  p {
+    font-size: 15px; line-height: 1.8; color: $gray-500;
+  }
+}
+
+.link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 600; color: $color-accent;
+  border-bottom: 1.5px solid $indigo-100; padding-bottom: 1px;
+  cursor: pointer; transition: border-color 0.2s;
+  background: none; border-left: none; border-right: none; border-top: none;
+
+  &:hover { border-color: $color-accent; }
+}
+
+// Right — feature cards grid
+.right {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.featureCard {
+  background: $white;
+  border: 1px solid $gray-100; border-radius: $radius-lg;
+  padding: 20px;
+  transition: border-color 0.2s, transform 0.2s;
+
+  &:hover { border-color: $indigo-100; transform: translateY(-2px); }
+}
+
+.featureIcon {
+  width: 36px; height: 36px;
+  border-radius: $radius-md;
+  background: $color-accent-bg;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+  color: $color-accent; font-size: 18px;
+}
+
+.featureTitle {
+  font-family: $font-display;
+  font-size: 13px; font-weight: 700; color: $color-text;
+  margin-bottom: 4px;
+}
+
+.featureDesc { font-size: 12px; color: $gray-400; line-height: 1.6; }
+
+@media (max-width: $bp-tablet) {
+  .inner { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: $bp-mobile) {
+  .about { padding: 60px 1.25rem; }
+  .right { grid-template-columns: 1fr 1fr; }
+}

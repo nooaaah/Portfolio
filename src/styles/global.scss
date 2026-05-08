@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Geist:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+html, body {
+  margin: 0; padding: 0;
+  width: 100%; min-height: 100vh;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-body;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+body { overflow-x: hidden; }
+
+h1, h2, h3 { font-family: $font-display; letter-spacing: -0.025em; margin: 0; }
+h1 { font-weight: 800; }
+h2 { font-weight: 700; }
+h3 { font-weight: 600; }
+p  { margin: 0; color: $color-muted; }
+a  { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { max-width: 100%; display: block; }
+
+section { width: 100%; }
+
+// Reusable chip label
+.chip-label {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: $font-body;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: $color-accent;
+  background: $color-accent-bg;
+  border: 1px solid $color-accent-mid;
+  padding: 4px 12px;
+  border-radius: $radius-pill;
+  margin-bottom: 16px;
+}
+
+// Section heading pattern
+.section-heading {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800; color: $color-text;
+  line-height: 1.1;
+}
+
+*::-webkit-scrollbar { width: 5px; }
+*::-webkit-scrollbar-thumb { background: $gray-200; border-radius: 3px; }
+*::-webkit-scrollbar-track { background: transparent; }

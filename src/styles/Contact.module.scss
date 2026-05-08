@@ -1,0 +1,71 @@
+@use '../styles/variables' as *;
+
+.contact {
+  background: $gray-900; padding: 88px 2rem;
+}
+
+.inner {
+  max-width: $max-width; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+
+.left {}
+
+.chipLight {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: $indigo-100;
+  background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3);
+  padding: 4px 12px; border-radius: $radius-pill;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: $font-display;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800; line-height: 1.1; letter-spacing: -0.03em;
+  color: $white; margin-bottom: 16px;
+
+  span { color: $indigo-100; }
+}
+
+.subtitle { font-size: 15px; color: $gray-400; line-height: 1.7; max-width: 380px; }
+
+// Cards à droite
+.cards {
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: $radius-lg; padding: 20px 22px;
+  display: flex; align-items: center; gap: 14px;
+  text-decoration: none; color: inherit;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+
+  &:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.14); transform: translateX(4px); }
+}
+
+.cardIcon {
+  width: 40px; height: 40px; border-radius: $radius-md;
+  background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: $indigo-100; font-size: 18px; flex-shrink: 0;
+}
+
+.cardBody { flex: 1; }
+.cardLabel { font-size: 10px; font-weight: 600; color: $gray-500; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+.cardValue { font-size: 14px; font-weight: 500; color: $white; }
+
+.cardArrow { color: $gray-500; font-size: 16px; transition: transform 0.2s; }
+.card:hover .cardArrow { transform: translateX(3px); }
+
+@media (max-width: $bp-tablet) {
+  .inner { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: $bp-mobile) {
+  .contact { padding: 60px 1.25rem; }
+}
